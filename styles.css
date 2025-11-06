@@ -24,7 +24,7 @@ body {
 }
 .page__text {
     margin-top: 46px;
-    line-height: 100%;
+    line-height: 98%;
     letter-spacing: -5px;
     font-weight: 400;
     text-align: center;
@@ -82,3 +82,4 @@ body {
     z-index: -2; 
 
 }
+
