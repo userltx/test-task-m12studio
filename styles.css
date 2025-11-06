@@ -1,0 +1,83 @@
+body {
+    font-family: "Golos Text", sans-serif;
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 48px;
+    text-align: center;
+}
+.page__title {
+    text-align: center;
+    opacity: 50%;
+    line-height: 125%;
+    font-weight: 400;
+    color: white;
+    font-size: 24px;
+}
+.page__text {
+    margin-top: 40px;
+    line-height: 100%;
+    letter-spacing: -5px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    font-size: 120px;
+    margin-bottom: 96px;
+}
+.page__text-img {
+    height: 84px; 
+    margin: 0px 32px;
+    border-radius: 160px;
+    object-fit: cover; 
+}
+.page__button {
+    font-family: inherit;
+    transform: translate(0%, 0);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 24px 48px;
+    position: relative;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+.page__button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    height: 100%;
+    clip-path: polygon(
+    8% 0%, 92% 0%, 
+    100% 50%, 92% 100%, 
+    8% 100%, 0% 50%
+    );
+    -webkit-clip-path: polygon(
+    8% 0%, 92% 0%, 
+    100% 50%, 92% 100%, 
+    8% 100%, 0% 50%
+    );
+    z-index: -1;
+}
+.page__button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 1210px;
+    height: 2px;
+    background-color: white;
+    z-index: -2; 
+}
